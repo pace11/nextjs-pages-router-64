@@ -1,4 +1,6 @@
-:root {
+@import 'tailwindcss';
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -35,8 +37,12 @@ a {
   text-decoration: none;
 }
 
+.header {
+  background-color: blueviolet;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
