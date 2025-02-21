@@ -29,8 +29,8 @@ export default function NotesServerPage({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <div className="p-4 bg-white shadow-sm rounded-lg">
-      <h1>{notes.data.title}</h1>
-      <p>{notes.data.description}</p>
+      <h1>{notes.data?.title}</h1>
+      <p>{notes.data?.description}</p>
     </div>
   )
 }

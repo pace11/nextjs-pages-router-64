@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useCallback, useEffect, useState } from 'react'
 
 export default function TestApi() {
@@ -40,7 +41,7 @@ export default function TestApi() {
   return (
     <div>
       <ul>
-        {notes?.map((el) => (
+        {notes?.map((el: { id: string; title: string }) => (
           <li key={el.id}>{el.title}</li>
         ))}
       </ul>
