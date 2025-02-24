@@ -20,7 +20,7 @@ export default function NotesServerCreate() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
+    // reset,
   } = useForm<FormNotes>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -53,10 +53,10 @@ export default function NotesServerCreate() {
   }
 
   useEffect(() => {
-    reset({
-      title: title,
-      description: description,
-    })
+    // reset({
+    //   title: title,
+    //   description: description,
+    // })
   }, [title, description])
 
   return (

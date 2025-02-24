@@ -15,13 +15,13 @@ export default async function handler(
   }
 
   try {
-    const mappingUrl = {
-      'POST': `${process.env.API_URL}`,
-      'PATCH': `${process.env.API_URL}/${req.query.id}`,
-    }
+    // const mappingUrl = {
+    //   POST: `${process.env.API_URL}`,
+    //   PATCH: `${process.env.API_URL}/${req.query.id}`,
+    // }
 
     const validatedData = formSchema.parse(req.body)
-    const response = await fetch(`${mappingUrl[req.method]}`, {
+    const response = await fetch(``, {
       method: req.method,
       headers: {
         'Content-Type': 'application/json',

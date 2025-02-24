@@ -36,7 +36,7 @@ export default function TestApi() {
     // }
 
     fetchData()
-  }, [])
+  }, [fetchData])
 
   return (
     <div>
